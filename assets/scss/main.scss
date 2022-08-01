@@ -1,0 +1,532 @@
+%socials-design{
+    padding: 4px 10px;
+    background-color: #a78377;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+
+%socials-hover{
+    transform: scale(0.8);
+    opacity: 0.9;
+}
+
+.pre-header{
+    background-color: #363636;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6% 2%;
+    flex-wrap: wrap;
+    &__logo-wrapper{
+        &__logo{
+            a{
+                text-decoration: none;
+                font-size: 24px;
+            }
+        }
+    }
+    &__button-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        &__buy-now{
+            padding: 5px 18px;
+            background-color: #82b440;
+            border-radius: 7px;
+            opacity: 1;
+            transition: 0.3s;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+        &__buy-now:hover{
+            opacity: 0.8;
+            transform: scale(1.2);
+            // animation-name: abaka;
+            // animation-duration: 1s;
+            // animation-iteration-count: infinite;
+        }
+    }
+}
+
+header{
+    .container{
+        padding: 0 0 1.4 0%;
+        display: flex;
+        &__logo-nav{
+            display: flex;
+            &__logo{
+                width: 30%;
+                display: flex;
+                align-items: center;
+            }
+            &__nav{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                &__links{
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    ul{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        list-style: none;
+                        margin: 0;
+                        li{
+                            a{
+                                text-decoration: none;
+                                color: rgb(112, 110, 110);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__order{
+            display: flex;
+            justify-content: center;
+            &__number{
+                height: 100%;
+                display: flex;
+                justify-content: space-around;
+                padding: 3% 0;
+                i{
+                    font-size: 50px;
+                }
+                color: white;
+                background-color: #7e5a4e;
+                width: 50%;
+                &__info{
+                    line-height: 5px;
+                }
+            }
+        }
+    }
+}
+
+#blog{
+    background-image: url(https://cookingforbusypeople.com/wp-content/uploads/2019/07/f7.jpg);
+    height: 48vh;
+    display: flex;
+    align-items: center;
+    .container{
+        color: rgb(255, 255, 255);
+        &__title{
+            h1{
+                font-size: 70px;
+            }
+        }
+        &__desc{
+            span{
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+#products{
+    .container{
+        padding: 6% 0 4% 0;
+        display: flex;
+        flex-wrap: wrap;
+        &__product1{
+            margin-bottom: 30px;
+            &__vanilla{
+                border: 1px solid rgb(228, 225, 225);
+                height: 685px;
+                width: 95%;
+                transition: 0.3s;
+                &__image{
+                    height: 60%;
+                    position: relative;
+                    opacity: 1;
+                    transition: 0.3s;
+                }
+                &__image::after{
+                    content:'INSIGHT';
+                    background-color: white;
+                    position: absolute;
+                    top: 3%;
+                    right: 3%;
+                    padding: 1% 3%;
+                    letter-spacing: 3px;
+                    font-size: 13px;
+                    font-weight: bold;
+                }
+
+                &__title-desc{
+                    padding: 4% 5% 2% 5%;
+                }
+                &__date{
+                    padding: 0 5%;
+                    color: red;
+                }
+            }
+            &__vanilla:hover{
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+            }
+            &__vanilla:hover .container__product1__vanilla__image{
+                opacity: 0.9;
+            }
+        }
+        &__product2{
+            margin-bottom: 30px;
+            &__egg{
+                border: 1px solid rgb(228, 225, 225);
+                height: 685px;
+                width: 95%;
+                transition: 0.3s;
+                &__image{
+                    height: 60%;
+                    position: relative;
+                    opacity: 1;
+                    transition: 0.3s;
+                }
+                &__image::after{
+                    content:'Bread';
+                    background-color: white;
+                    position: absolute;
+                    top: 3%;
+                    right: 3%;
+                    padding: 1% 3%;
+                    letter-spacing: 3px;
+                    font-size: 13px;
+                    font-weight: bold;
+                }
+
+                &__title-desc{
+                    padding: 4% 5% 2% 5%;
+                }
+                &__date{
+                    padding: 0 5%;
+                    color: red;
+                }
+            }
+            &__egg:hover{
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+            }
+            &__egg:hover .container__product2__egg__image{
+                opacity: 0.9;
+            }
+        }
+        &__product3{
+            margin-bottom: 30px;
+            &__fondant{
+                border: 1px solid rgb(228, 225, 225);
+                height: 685px;
+                width: 95%;
+                transition: 0.3s;
+                &__image{
+                    height: 60%;
+                    position: relative;
+                    opacity:1;
+                    transition: 0.3s;
+                }
+                &__image::after{
+                    content:'Bread';
+                    background-color: white;
+                    position: absolute;
+                    top: 3%;
+                    right: 3%;
+                    padding: 1% 3%;
+                    letter-spacing: 3px;
+                    font-size: 13px;
+                    font-weight: bold;
+                }
+
+                &__title-desc{
+                    padding: 4% 5% 2% 5%;
+                }
+                &__date{
+                    padding: 0 5%;
+                    color: red;
+                }
+            }
+            &__fondant:hover{
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+            }
+            &__fondant:hover .container__product3__fondant__image{
+                opacity: 0.9;
+            }
+        }
+        &__product4{
+            margin-bottom: 30px;
+            &__food{
+                border: 1px solid rgb(228, 225, 225);
+                height: 685px;
+                width: 95%;
+                transition: 0.3s;
+                &__image{
+                    height: 60%;
+                    position: relative;
+                    opacity: 1;
+                    transition: 0.3s;
+                }
+                &__image::after{
+                    content:'Bread';
+                    background-color: white;
+                    position: absolute;
+                    top: 3%;
+                    right: 3%;
+                    padding: 1% 3%;
+                    letter-spacing: 3px;
+                    font-size: 13px;
+                    font-weight: bold;
+                }
+
+                &__title-desc{
+                    padding: 4% 5% 2% 5%;
+                }
+                &__date{
+                    padding: 0 5%;
+                    color: red;
+                }
+            }
+            &__food:hover{
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+            }
+            &__food:hover .container__product4__food__image{
+                opacity: 0.9;
+            }
+        }
+        &__product5{
+            margin-bottom: 30px;
+            &__chocolate{
+                border: 1px solid rgb(228, 225, 225);
+                height: 685px;
+                width: 95%;
+                transition: 0.3s;
+                &__image{
+                    height: 60%;
+                    position: relative;
+                    opacity: 1;
+                    transition: 0.3s;
+                }
+                &__image::after{
+                    content:'Bread';
+                    background-color: white;
+                    position: absolute;
+                    top: 3%;
+                    right: 3%;
+                    padding: 1% 3%;
+                    letter-spacing: 3px;
+                    font-size: 13px;
+                    font-weight: bold;
+                }
+
+                &__title-desc{
+                    padding: 4% 5% 2% 5%;
+                }
+                &__date{
+                    padding: 0 5%;
+                    color: red;
+                }
+            }
+            &__chocolate:hover{
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+            }
+            &__chocolate:hover .container__product5__chocolate__image{
+                opacity: 0.9;
+            }
+        }
+        &__product6{
+            margin-bottom: 30px;
+            &__cupcake{
+                border: 1px solid rgb(228, 225, 225);
+                height: 685px;
+                width: 95%;
+                transition: 0.3s;
+                &__image{
+                    height: 60%;
+                    position: relative;
+                    opacity: 1;
+                    transition: 0.3s;
+                }
+                &__image::after{
+                    content:'Bread';
+                    background-color: white;
+                    position: absolute;
+                    top: 3%;
+                    right: 3%;
+                    padding: 1% 3%;
+                    letter-spacing: 3px;
+                    font-size: 13px;
+                    font-weight: bold;
+                }
+
+                &__title-desc{
+                    padding: 4% 5% 2% 5%;
+                }
+                &__date{
+                    padding: 0 5%;
+                    color: red;
+                }
+            }
+            &__cupcake:hover{
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+            }
+            &__cupcake:hover .container__product6__cupcake__image{
+                opacity: 0.9;
+            }
+        }
+    }
+}
+
+footer{
+    background-image: url(http://breadmeal.com/test/img/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+    .container{
+        color: white;
+        padding: 5% 0;
+        display: flex;
+        flex-wrap: wrap;
+        &__info-nav{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            &__info-socials{
+                &__image{
+                    padding-bottom:3% ;
+                }
+                &__socials{
+                    padding: 5% 0;
+                    display: flex;
+                    &__facebook{
+                        padding: 4px 10px;
+                        background-color: #a78377;
+                        margin-right: 5px;
+                        border-radius: 3px;
+                        transition: 0.2s;
+                    }
+                    &__youtube{
+                        @extend %socials-design;
+                    }
+                    &__instagram{
+                        @extend %socials-design;
+                    }
+                    &__twitter{
+                        @extend %socials-design;
+                    }
+                    &__facebook:hover{
+                        @extend %socials-hover;
+                    }
+                    &__instagram:hover{
+                        @extend %socials-hover;
+                    }
+                    &__twitter:hover{
+                        @extend %socials-hover;
+                    }
+                    &__youtube:hover{
+                        @extend %socials-hover;
+                    }
+                    
+                }
+            }
+            &__nav{
+                &__company-contacts{
+                    display: flex;
+                    justify-content: space-between;
+                    a{
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+            }
+            &__opening-hours{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1220px) {
+    header .container__order{
+        display: flex !important;
+        justify-content: flex-end !important;
+    }
+    #products .container .container__product1{
+        width: calc(100% / 2);
+    }
+    #products .container .container__product2{
+        width: calc(100% / 2);
+    }
+    #products .container .container__product3{
+        width: calc(100% / 2);
+    }
+    #products .container .container__product4{
+        width: calc(100% / 2);
+    }
+    #products .container .container__product5{
+        width: calc(100% / 2);
+    }
+    #products .container .container__product6{
+        width: calc(100% / 2);
+    }
+}
+@media screen and (max-width:769px) {
+    header .container__order{
+        display: flex !important;
+        justify-content: flex-end !important;
+    }
+    #products .container .container__product1{
+        width: calc(100%);
+    }
+    #products .container .container__product2{
+        width: calc(100%);
+    }
+    #products .container .container__product3{
+        width: calc(100%);
+    }
+    #products .container .container__product4{
+        width: calc(100%);
+    }
+    #products .container .container__product5{
+        width: calc(100%);
+    }
+    #products .container .container__product6{
+        width: calc(100%);
+    }
+}
+@media screen and (max-width:993px) {
+    footer .container .container__info-nav__opening-hours{
+        align-items: center;
+        padding-bottom: 5%;
+    }
+    footer .container .container__info-nav__nav__company-contacts{
+        justify-content: space-evenly;
+        padding: 5% 0;
+    }
+    header .container .container__logo-nav__nav{
+        display: none;
+    }
+    header .container .container__logo-nav__logo{
+        width: 80%;
+    }
+    header .container .container__order__number{
+        width: 100%;
+    }
+}
+//  @keyframes abaka {
+//     from{
+//         transform: scale(1);
+//     }
+//     to{
+//         transform: scale(1.3);
+//     }
+//  }
